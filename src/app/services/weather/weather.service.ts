@@ -11,7 +11,7 @@ export class WeatherService {
   getCityWeatherByName(city: string, metric: 'metric' | 'imperial' = 'metric'): Subject<string> {
     const dataSub = new Subject<string>();
     this.http.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${metric}&APPID=952d6b1a52fe15a7b901720074680562`)
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${metric}&APPID=99c465804abe2371a0687086af4d0fab`)
       .subscribe((data) => {
         dataSub.next(data['weather']);
       }, (err) => {
