@@ -11,8 +11,6 @@ import {HttpClientModule} from '@angular/common/http';
 import {WeatherCardComponent} from './ui/weather-card/weather-card.component';
 import {AddCardComponent} from './ui/add-card/add-card.component';
 import {AddComponent} from './pages/add/add.component';
-import {LoginComponent} from './pages/login/login.component';
-import {SignupComponent} from './pages/signup/signup.component';
 import {UiService} from './services/ui/ui.service';
 
 @NgModule({
@@ -23,8 +21,6 @@ import {UiService} from './services/ui/ui.service';
     WeatherCardComponent,
     AddCardComponent,
     AddComponent,
-    LoginComponent,
-    SignupComponent,
     AddCardComponent
   ],
   imports: [
